@@ -1,0 +1,17 @@
+INSERT INTO tbl_patient (patientID, patient_LastName, patient_FirstName, patient_DOB,patientAddress,patientEmail,patientMobileno,patientGender,patientinfo_type)
+VALUES (123,'Juluru','Mounisha','1990-05-24 6:10:00','ArnstrasseGermany','mounisha.juluru@gmail.com',1121906214,'Female','Private');
+
+
+
+INSERT INTO tbl_patient (patientID, patient_LastName, patient_FirstName, patient_DOB,patientAddress,patientEmail,patientMobileno,patientGender,patientinfo_type)
+VALUES (234,'xyz','xyz','1990-05-12 6:10:00','ArnstrasseGermany','xyz@gmail.com',1121906204,'Female','Private');
+
+INSERT INTO tbl_patient (patientID, patient_LastName, patient_FirstName, patient_DOB,patientAddress,patientEmail,patientMobileno,patientGender,patientinfo_type)
+VALUES (345,'def','abc','1990-05-12 6:10:00','ArnstrasseGermany','abc@gmail.com',1121306204,'Male','');
+
+
+insert into tbl_doctor(DoctorID,DoctorName,DoctorSalary,DoctorMobileno,DoctorSpecialization,Doctorexperience,DoctorEmail)
+values (2,'Kasturi',25000,122345667,'Gynocologist','2years','kasturi1@gmail.com');
+
+insert into tbl_doctor(DoctorID,DoctorName,DoctorSalary,DoctorMobileno,DoctorSpecialization,Doctorexperience,DoctorEmail)
+values (1,'Sai',25000,122345667,'Physiotherapist','2years','sai1@gmail.com');

@@ -1,0 +1,43 @@
+CREATE TABLE tbl_patient (
+	patientID int NOT NULL,
+	patient_LastName varchar(255) NOT NULL,
+	patient_FirstName varchar(255) NOT NULL,
+	patient_DOB date NOT NULL,
+	patientAddress varchar(255) NOT NULL,
+	patientEmail varchar(100) NOT NULL,
+	patientMobileno int NOT NULL,
+	patientGender varchar(20) NOT NULL,
+	patientinfo_type varchar(10),
+    PRIMARY KEY (patientID)
+);
+
+CREATE TABLE tbl_doctor(
+	DoctorID int NOT NULL,
+	DoctorName varchar(255) NOT NULL,
+	DoctorSalary varchar(50),
+	DoctorMobileno int NOT NULL,
+	DoctorSpecialization varchar(100) NOT NULL,
+	Doctorexperience varchar(30),
+	DoctorEmail varchar(100) NOT NULL
+	PRIMARY KEY (DoctorID)
+);
+
+CREATE TABLE tbl_ConsultReq(
+	ConsultID int NOT NULL PRIMARY KEY,
+	illness_type varchar(100),
+	symptoms varchar(255) NOT NULL,
+	Dr_comments varchar(255),
+	Patient_comments varchar(255),
+	old_prescription varchar(255),
+	new_prescription varchar(255) NOT NULL,
+	consult_status varchar(20) NOT NULL,
+	patientID int FOREIGN KEY REFERENCES tbl_patient(patientID)
+	DoctorID int FOREIGN KEY REFERENCES tbl_doctor(DoctorID)
+);
+ 
+	
+CREATE TABLE tbl_user(
+	loginID varchar(100) NOT NULL PRIMARY KEY,
+	password varchar(100) NOT NULL,
+	usertype varchar(20) NOT NULL
+);	
